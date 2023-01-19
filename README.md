@@ -42,5 +42,23 @@ params = {
 }
 and you should get response with access token and refresh token
 ```
-3- now with access token you can make requests like below
-![test image](https://images.unsplash.com/photo-1508004526072-3be43a5005f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBpY3R1cmV8ZW58MHx8MHx8&w=1000&q=80)
+3- now with access token you can make GET requests to search for products
+```
+http://127.0.0.1:8000/products/?ordering=id
+http://127.0.0.1:8000/products/?ordering=name
+http://127.0.0.1:8000/products/?ordering=category
+http://127.0.0.1:8000/products/?min_price=4.000&max_price=90.000
+http://127.0.0.1:8000/products/?category=finance&name=&min_price=5.000&max_price=90.000&min_quantity=4&max_quantity=30&brand=&rating=&created_at=
+http://127.0.0.1:8000/products/?search=finance
+```
+4- you can acess to cart and make crud operation
+```
+[GET]http://127.0.0.1:8000/cart
+[POST]http://127.0.0.1:8000/cart
+[GET]http://127.0.0.1:8000/cart/1
+[PUT]http://127.0.0.1:8000/cart/1
+[DELETE]http://127.0.0.1:8000/cart/1
+```
+
+
+
