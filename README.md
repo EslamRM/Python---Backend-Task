@@ -19,6 +19,7 @@ Once pip has finished downloading the dependencies:
 ```
 > (env)$ cd project
 > (env)$ python manage.py runserver
+```
 ## walkthrough
 1- first you have to register or create super user
 ```
