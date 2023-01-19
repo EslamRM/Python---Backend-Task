@@ -6,9 +6,9 @@ from rest_framework_simplejwt.views import TokenRefreshView
 
 router = DefaultRouter()
 # products api
-router.register('products',ProductViewSet)
+router.register(r'products',ProductViewSet,basename="products")
 # cart api
-router.register('cart',CartViewSet)
+router.register(r'cart',CartViewSet,basename="cart")
 
 urlpatterns = [
     path('', include(router.urls)),
