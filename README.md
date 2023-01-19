@@ -59,6 +59,9 @@ http://127.0.0.1:8000/products/?search=finance
 [PUT]http://127.0.0.1:8000/cart/1
 [DELETE]http://127.0.0.1:8000/cart/1
 ```
-
+5- finally you can make test on the api
+```
+python manage.py test products
+```
 
 
