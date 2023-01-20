@@ -21,6 +21,10 @@ Once pip has finished downloading the dependencies:
 > (env)$ python manage.py runserver
 ```
 ## walkthrough
+--swagger documentation
+```
+http://127.0.0.1:8000/doc-api/
+```
 1- first you have to register or create super user
 ```
 POST http://127.0.0.1:8000/register/
